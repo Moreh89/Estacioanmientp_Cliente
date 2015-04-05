@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Estacionamiento-Server"/>
+	<classpathentry kind="lib" path="Librerias/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="Librerias/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="Librerias/commons-digester-1.7.jar"/>
+	<classpathentry kind="lib" path="Librerias/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="Librerias/iText-2.1.0.jar"/>
+	<classpathentry kind="lib" path="Librerias/jasperreports-5.5.0.jar"/>
+	<classpathentry kind="lib" path="Librerias/jgoodies-common-1.8.0.jar"/>
+	<classpathentry kind="lib" path="Librerias/jgoodies-looks-2.6.0.jar"/>
+	<classpathentry kind="lib" path="Librerias/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry kind="lib" path="Librerias/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="Librerias/sqljdbc.jar"/>
+	<classpathentry kind="lib" path="Librerias/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="Librerias/SubstanceLAF.jar"/>
+	<classpathentry kind="lib" path="Librerias/swingx-all-1.6.4.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
