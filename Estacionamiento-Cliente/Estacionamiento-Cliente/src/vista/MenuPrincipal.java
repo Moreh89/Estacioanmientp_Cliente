@@ -158,7 +158,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 				
 				jMenuFacturacion.add(reportePlanillaFacturacion);
 				
-				boolean validarPermiso = Sistema.getInstancia().validarPermiso("Administrativo");
+				boolean validarPermiso = Controlador.getInstancia().validarPermiso("Administrativo");
 				if (validarPermiso==true){
 					reportePlanillaFacturacion.setEnabled(true);
 				}else
@@ -189,7 +189,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 			
 			jMenuHCE.add(buscarHCE);
 			
-			boolean validarPermiso = Sistema.getInstancia().validarPermiso("Oftalmologo");
+			boolean validarPermiso = Controlador.getInstancia().validarPermiso("Oftalmologo");
 			if (validarPermiso==true){
 				buscarHCE.setEnabled(true);
 			}else
@@ -222,7 +222,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 				});
 				
 				
-				boolean validarPermiso = Sistema.getInstancia().validarPermiso("Administrativo");
+				boolean validarPermiso = Controlador.getInstancia().validarPermiso("Administrativo");
 				if (validarPermiso==true){
 					usuarioMenuItem.setEnabled(true);
 				}else
@@ -242,7 +242,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 						bp.setVisible(true);
 					}
 				});
-				boolean validarPermiso = Sistema.getInstancia().validarPermiso("Administrativo");
+				boolean validarPermiso = Controlador.getInstancia().validarPermiso("Administrativo");
 				if (validarPermiso==true){
 					pacienteMenuItem.setEnabled(true);
 				}else

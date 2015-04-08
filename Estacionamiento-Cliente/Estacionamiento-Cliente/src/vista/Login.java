@@ -44,7 +44,7 @@ public class Login extends javax.swing.JDialog implements ActionListener{
 	private JButton cancelButton;
 	private JPasswordField passwordText;
 	private JTextField usuarioText;
-	private JLabel lblSolpaSa;
+	private JLabel lblEstacionamiento;
 	private BufferedImage image1;
 	private JLabel lblNewLabel;
 	private BufferedImage image;
@@ -76,6 +76,7 @@ public class Login extends javax.swing.JDialog implements ActionListener{
 					jLabel1 = new JLabel();
 					getContentPane().add(jLabel1);
 					jLabel1.setBounds(273, 83, 157, 128);
+					
 					jLabel1.setIcon(new ImageIcon(getClass().getClassLoader().getResource("image/login.png")));
 				
 				
@@ -161,17 +162,17 @@ public class Login extends javax.swing.JDialog implements ActionListener{
 				
 			
 			
-					lblNewLabel = new JLabel("Sistema de Atenci\u00F3n a Paciente");
+					lblNewLabel = new JLabel("Sistema de Estacionamiento");
 					lblNewLabel.setForeground(Color.WHITE);
 					lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 13));
 					lblNewLabel.setBounds(97, 303, 218, 14);
 					getContentPane().add(lblNewLabel);
 
-					lblSolpaSa = new JLabel("Solpa SA");
-					lblSolpaSa.setForeground(new Color(255, 255, 255));
-					lblSolpaSa.setFont(new Font("Tahoma", Font.BOLD, 45));
-					lblSolpaSa.setBounds(97, 11, 218, 67);
-					getContentPane().add(lblSolpaSa);
+					lblEstacionamiento = new JLabel("Estacionamiento");
+					lblEstacionamiento.setForeground(new Color(255, 255, 255));
+					lblEstacionamiento.setFont(new Font("Tahoma", Font.BOLD, 40));
+					lblEstacionamiento.setBounds(50, 11, 350, 67);
+					getContentPane().add(lblEstacionamiento);
 			
 	
 					jLabel5 = new JLabel();
