@@ -30,7 +30,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 	private JMenuItem exitMenuItem;
 	private JSeparator jSeparator2;
 	private JMenuItem usuarioMenuItem;
-	private JMenuItem pacienteMenuItem;
+	private JMenuItem clienteMenuItem;
 	private JMenu jMenu3;
 	private JMenuBar jMenuBar1;
 	protected TimerThread timerThread;
@@ -41,6 +41,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 	private JStatusBar statusBar;
 	private JLabel dateLabel;
 	private JLabel timeLabel;
+	private JMenuItem vehiculoMenuItem;
 
 	
 	public MenuPrincipal() {
@@ -231,12 +232,18 @@ public class MenuPrincipal extends javax.swing.JFrame {
 			}
 			
 			{
-				pacienteMenuItem = new JMenuItem();
-				jMenu3.add(pacienteMenuItem);
-				pacienteMenuItem.setText("Pacientes");
-				pacienteMenuItem.setMnemonic(KeyEvent.VK_P);
-				pacienteMenuItem.setIcon(new ImageIcon(getClass().getClassLoader().getResource("image/paciente.png")));
-				pacienteMenuItem.addActionListener(new ActionListener() {
+				clienteMenuItem = new JMenuItem();
+				jMenu3.add(clienteMenuItem);
+				clienteMenuItem.setText("Clientes");
+				clienteMenuItem.setMnemonic(KeyEvent.VK_P);
+				clienteMenuItem.setIcon(new ImageIcon(getClass().getClassLoader().getResource("image/paciente.png")));
+				{
+					vehiculoMenuItem = new JMenuItem();
+					vehiculoMenuItem.setText("Vehiculos");
+					vehiculoMenuItem.setMnemonic(KeyEvent.VK_P);
+					jMenu3.add(vehiculoMenuItem);
+				}
+				clienteMenuItem.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent arg0) {
 						BuscardorPaciente bp = new BuscardorPaciente();
 						bp.setVisible(true);
@@ -244,9 +251,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
 				});
 				boolean validarPermiso = Controlador.getInstancia().validarPermiso("Administrativo");
 				if (validarPermiso==true){
-					pacienteMenuItem.setEnabled(true);
+					clienteMenuItem.setEnabled(true);
 				}else
-					pacienteMenuItem.setEnabled(false);
+					clienteMenuItem.setEnabled(false);
 				
 			}
 			
